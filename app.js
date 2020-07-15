@@ -1,10 +1,17 @@
 const express = require('express');
+const connectDB = require('./config/db');
+
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.get('/', (req, res) => res.json({
-  msg: 'You have reached the wfh-team04-project API',
-}));
+// Connect Database
+connectDB();
+
+app.get('/', (req, res) =>
+  res.json({
+    msg: 'You have reached the wfh-team04-project API',
+  })
+);
 
 // Define Routes
 app.use('/api/users', require('./routes/users'));
