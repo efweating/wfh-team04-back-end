@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://wfh-team04:wfh-team04@cluster0.aq3k0.mongodb.net/main?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://wfh-team04:wfh-team04@cluster0.aq3k0.mongodb.net/main?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
 }
